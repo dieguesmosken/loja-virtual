@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Loja Virtual - Sobre</title>
+    <style>
+        /* Estilo do CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        /* Estilo da barra de navegação */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #eee;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav ul li a.active {
+            color: #333;
+            border-bottom: 2px solid #333;
+        }
+
+        /* Estilo da barra de busca */
+        nav form {
+            display: flex;
+            align-items: center;
+        }
+
+        nav form input[type="text"] {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        nav form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        nav form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        /* Estilo do conteúdo principal */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        main section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 800px;
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        main section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        main section p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        main section img {
+            display: block;
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja Virtual</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#" class="active">Sobre</a></li>
+            <li class="carrinho">
+                <a href="#">
+                    <i class="fas fa-shopping-cart"></i> <!-- Ícone de carrinho -->
+                    <span class="numero-produtos">0</span> <!-- Número de produtos -->
+                </a>
+            </li>
+        </ul>
+        <form action="#">
+            <input type="text" name="search" placeholder="Buscar...">
+            <input type="submit" value="Buscar">
+        </form>
+    </nav>
+    <main>
+        <!-- Conteúdo do HTML -->
+        <section>
+            <h2>Sobre o desenvolvedor</h2>
+            <img src="https://avatars.githubusercontent.com/u/69434680?v=4" alt="Foto do desenvolvedor">
+            <p>Olá, meu nome é Matheus Mosken Diegues, tenho 21 anos e sou estudante do 1º semestre de Desenvolvimento
+                de Software Multiplataforma na Fatec Registro. Sou apaixonado por tecnologia e programação, e estou
+                sempre buscando aprender novas habilidades e ferramentas. Este site é um projeto que fiz para a aula de
+                HTML, CSS e JavaScript, onde criei uma loja virtual de forma semântica e responsiva.</p>
+            <p>Se você quiser entrar em contato comigo, pode me ligar no telefone (11) 99999-9999 ou me enviar um email
+                para matheusmosken42@gmail.com. Também estou nas redes sociais, como Facebook, Instagram e LinkedIn.
+                Ficarei feliz em receber seu feedback ou sugestão sobre o site.</p>
+            <p>Obrigado pela sua visita e espero que tenha gostado da loja virtual!</p>
+        </section>
+    </main>
+    <footer>
+        <!-- Rodapé do HTML -->
+        © Loja Virtual - Todos os direitos reservados.
+    </footer>
+</body>
+</html>

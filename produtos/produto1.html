@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Loja Virtual - Produto 1</title>
+    <style>
+        /* Estilo do CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        /* Estilo da barra de navegação */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #eee;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav ul li a.active {
+            color: #333;
+            border-bottom: 2px solid #333;
+        }
+
+        /* Estilo da barra de busca */
+        nav form {
+            display: flex;
+            align-items: center;
+        }
+
+        nav form input[type="text"] {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        nav form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        nav form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        /* Estilo do conteúdo principal */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        main section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 800px;
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        main section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        main section p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        main section img {
+            display: block;
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        /* Estilo do botão "Comprar" */
+        main section button {
+            display: block;
+            margin: auto;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        main section button:hover {
+            background-color: #555;
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        /* Estilo do ícone do carrinho 
+        nav li.carrinho {
+            display: flex;
+            align-items: center;
+        }
+
+        nav li.carrinho a {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+
+        nav li.carrinho a i {
+            font-size: 24px;
+            margin-right: 5px;
+        }*/
+
+        /* Estilo do número de produtos no carrinho */
+        nav li.carrinho .numero-produtos {
+            background-color: #333;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Loja Virtual</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../produtos.html">Produtos</a></li>
+            <li><a href="../contato.html">Contato</a></li>
+            <li><a href="../sobre.html">Sobre</a></li>
+            <li class="carrinho">
+                <a href="carrinho.html">
+                    <i class="fas fa-shopping-cart"></i> <!-- Ícone de carrinho -->
+                    <span class="numero-produtos">0</span> <!-- Número de produtos -->
+                </a>
+            </li>
+        </ul>
+        <form action="#">
+            <input type="text" name="search" placeholder="Buscar...">
+            <input type="submit" value="Buscar">
+        </form>
+    </nav>
+    <main>
+        <!-- Conteúdo do HTML -->
+        <section>
+            <h2>Produto 1</h2>
+            <img src="https://via.placeholder.com/200x200" alt="Imagem do produto 1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo quis nisi consequat tincidunt.
+                Morbi vitae nisl id urna tincidunt aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                quis leo quis nisi consequat tincidunt. Morbi vitae nisl id urna tincidunt aliquet.</p>
+            <button onclick="alert('Produto adicionado ao carrinho!')">Comprar</button>
+        </section>
+    </main>
+    <footer>
+        <!-- Rodapé do HTML -->
+        © Loja Virtual - Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>

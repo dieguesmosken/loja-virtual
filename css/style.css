@@ -1,0 +1,82 @@
+ /* Estilo do CSS */
+ html {
+     height: 100%;
+     min-height: 100%;
+ }
+
+ body {
+     display: flex;
+     flex-direction: column;
+     min-height: 100%;
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+ }
+
+ footer {
+     margin-top: auto;
+     background-color: #333;
+     color: white;
+     padding: 20px;
+     text-align: center;
+ }
+
+ header {
+     background-color: #333;
+     color: white;
+     padding: 20px;
+ }
+
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #eee;
+     padding: 10px;
+ }
+
+ nav ul {
+     list-style: none;
+     display: flex;
+     margin: 0;
+     padding: 0;
+ }
+
+ nav ul li {
+     margin: 10px;
+ }
+
+ nav ul li a {
+     text-decoration: none;
+     color: #333;
+ }
+
+ main {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+     padding: 20px;
+ }
+
+ main article {
+     border: 1px solid #ccc;
+     padding: 10px;
+ }
+
+ main article h2 {
+     text-align: center;
+ }
+
+ main article p {
+     text-align: justify;
+ }
+
+ main article button {
+     display: block;
+     margin: auto;
+     padding: 10px 20px;
+     background-color: #333;
+     color: white;
+     border: none;
+     cursor: pointer;
+ }

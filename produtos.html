@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Loja Virtual - Produtos</title>
+    <style>
+        /* Reset de estilos e estilo global */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        /* Estilo da barra de navegação */
+        nav {
+            background-color: #eee;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a.active {
+            color: #333;
+            border-bottom: 2px solid #333;
+        }
+
+        
+        /* Estilo da barra de busca */
+        nav form {
+            display: flex;
+            align-items: center;
+        }
+
+        nav form input[type="text"] {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        nav form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        nav form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        /* Estilo do conteúdo principal */
+        main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        main article {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        main article h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        main article p {
+            text-align: justify;
+        }
+
+        main article a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja Virtual</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#" class="active">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li class="carrinho">
+                <a href="#">
+                    <i class="fas fa-shopping-cart"></i> <!-- Ícone de carrinho -->
+                    <span class="numero-produtos">0</span> <!-- Número de produtos -->
+                </a>
+            </li>
+        </ul>
+        <form action="#">
+            <input type="text" name="search" placeholder="Buscar...">
+            <input type="submit" value="Buscar">
+        </form>
+    </nav>
+    <main>
+        <!-- Conteúdo do HTML -->
+        <article>
+            <h2>Produto 1</h2>
+            <img src="https://via.placeholder.com/200x200" alt="Imagem do produto 1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo quis nisi consequat tincidunt. Morbi vitae nisl id urna tincidunt aliquet.</p>
+            <a href="produtos/produto1.html">Ver mais</a>
+        </article>
+        <article>
+            <h2>Produto 2</h2>
+            <img src="https://via.placeholder.com/200x200" alt="Imagem do produto 2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo quis nisi consequat tincidunt. Morbi vitae nisl id urna tincidunt aliquet.</p>
+            <a href="produtos/produto2.html">Ver mais</a>
+        </article>
+        <article>
+            <h2>Produto 3</h2>
+            <img src="https://via.placeholder.com/200x200" alt="Imagem do produto 3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo quis nisi consequat tincidunt. Morbi vitae nisl id urna tincidunt aliquet.</p>
+            <a href="produtos/produto3.html">Ver mais</a>
+        </article>
+    </main>
+    <footer>
+        <!-- Rodapé do HTML -->
+        © Loja Virtual - Todos os direitos reservados.
+    </footer>
+</body>
+</html>

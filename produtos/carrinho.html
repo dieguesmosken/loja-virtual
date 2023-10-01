@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Carrinho de Compras</title>
+    <style>
+        /* Estilo do CSS (adicione ao seu arquivo de estilos) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        /* Estilo da barra de navegação (adicione ao seu arquivo de estilos) */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #eee;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav ul li a.active {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Estilo da barra de busca (adicione ao seu arquivo de estilos) */
+        nav form {
+            display: flex;
+            align-items: center;
+        }
+
+        nav form input[type="text"] {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        nav form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        nav form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        /* Estilo do conteúdo principal (adicione ao seu arquivo de estilos) */
+        main {
+            padding: 20px;
+        }
+
+        main h2 {
+            text-align: center;
+        }
+
+        /* Estilo da lista de produtos no carrinho (adicione ao seu arquivo de estilos) */
+        main ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        main li {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main li img {
+            width: 100px;
+            height: 100px;
+        }
+
+        main .produto-info {
+            flex: 1;
+            margin-left: 10px;
+        }
+
+        main .produto-quantidade input {
+            width: 40px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        main .produto-total {
+            font-weight: bold;
+        }
+
+        /* Estilo do total do carrinho (adicione ao seu arquivo de estilos) */
+        main .total {
+            text-align: right;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Estilo do botão "Finalizar Compra" (adicione ao seu arquivo de estilos) */
+        main .finalizar-compra {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        main .finalizar-compra button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        main .finalizar-compra button:hover {
+            background-color: #555;
+        }
+
+        /* Estilo do rodapé (adicione ao seu arquivo de estilos) */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Carrinho de Compras</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../produtos.html">Produtos</a></li>
+            <li><a href="../contato.html">Contato</a></li>
+            <li><a href="../sobre.html">Sobre</a></li>
+        </ul>
+        <form action="#">
+            <input type="text" name="search" placeholder="Buscar...">
+            <input type="submit" value="Buscar">
+        </form>
+    </nav>
+    <main>
+        <h2>Seu Carrinho de Compras</h2>
+        <ul>
+            <li>
+                <img src="https://via.placeholder.com/100x100" alt="Produto 1">
+                <div class="produto-info">
+                    <h3>Produto 1</h3>
+                    <p>Descrição do Produto 1.</p>
+                </div>
+                <div class="produto-quantidade">
+                    <label for="quantidade-produto-1">Quantidade:</label>
+                    <input type="number" id="quantidade-produto-1" name="quantidade-produto-1" value="1"
+                        placeholder="x" title="Quantidade do Produto 1">
+                </div>
+                <div class="produto-total">
+                    R$ 50,00
+                </div>
+            </li>
+            <li>
+                <img src="https://via.placeholder.com/100x100" alt="Produto 2">
+                <div class="produto-info">
+                    <h3>Produto 2</h3>
+                    <p>Descrição do Produto 2.</p>
+                </div>
+                <div class="produto-quantidade">
+                    <label for="quantidade-produto-2">Quantidade:</label>
+                    <input type="number" id="quantidade-produto-2" name="quantidade-produto-2" value="1"
+                        placeholder="x" title="Quantidade do Produto 2">
+                </div>
+                <div class="produto-total">
+                    R$ 100,00
+                </div>
+            </li>
+        </ul>
+        <div class="total">
+            Total: R$ 150,00
+        </div>
+        <!-- Botão para finalizar a compra -->
+        <div class="finalizar-compra">
+            <button type="button" onclick="alert('Compra finalizada com sucesso!')">Finalizar Compra</button>
+        </div>
+    </main>
+    <footer>
+        © Loja Virtual - Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
